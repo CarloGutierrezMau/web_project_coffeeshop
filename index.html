@@ -3,9 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Carlo" keywords="Carlo Emiliano Gutiérrez Martínez" />
-
+    <meta name="autor" content="Carlo Emiliano Gutiérrez Martínez" />
+    <meta
+      name="descripción"
+      content="Este es un proyecto odnde mostrare habilidades avanzadas de html y css."
+    />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Cafetería</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="page">
+      <header class="header">
+        <nav class="nav_header">
+          <a href="#"
+            ><img
+              class="logo_header"
+              src="./images/logo_coffeeshop_dark.svg"
+              alt="Logo Triple Spress coffee"
+          /></a>
+          <ul class="link_contenedor">
+            <li class="link_list">
+              <a class="link_element recetas" href="#">Recetas</a>
+            </li>
+            <li class="link_list">
+              <a class="link_element reservar" href="#">Reserva una mesa</a>
+            </li>
+            <li class="link_list">
+              <a class="link_element contactos" href="#">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_content">
+          <div class="header_text">
+            <h1 class="header_title">Café de especialidad en Triple Peaks</h1>
+            <h2 class="header_subtitle">
+              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
+              café para darte eneriga y motivar tu creatividad
+            </h2>
+          </div>
+          <div class="header_image_contenedor">
+            <img
+              class="header_image"
+              src="./images/inside_coffee_shop.png"
+              alt="Imagen de una Cafetería extravagantemente interesante"
+            />
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="recipes"></section>
+        <section class="reservation"></section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
 </html>
