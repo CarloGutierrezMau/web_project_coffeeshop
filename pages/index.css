@@ -60,6 +60,10 @@
   width: 620px;
 }
 
+.header_span {
+  color: #1c83dd;
+}
+
 .header_subtitle {
   margin-top: 50px;
   width: 760px;
@@ -78,6 +82,7 @@
   justify-content: space-between;
   width: 1300px;
   margin: 0 auto;
+  color: #959595;
 }
 .header_direccion {
   padding-top: 30px;
