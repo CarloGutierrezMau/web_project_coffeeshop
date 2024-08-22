@@ -128,3 +128,24 @@
   display: flex;
   justify-content: space-between;
 }
+
+.reservation {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d9e7ff;
+  background-image: url(../images/background_reservation.svg);
+}
+
+.reservation_content {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.reservation_title {
+  font-size: 43px;
+}
+
+.reservation_form_contenedor {
+  background-color: #fff;
+  width: 100%;
+}

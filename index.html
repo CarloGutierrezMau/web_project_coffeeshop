@@ -111,7 +111,53 @@
             </div>
           </div>
         </section>
-        <section class="reservation"></section>
+        <section class="reservation">
+          <div class="reservation_content">
+            <h2 class="reservation_title">Reserva una mesa</h2>
+            <form action="https://httpbin.org/post">
+              <div class="reservation_form_contenedor">
+                <div>
+                  <label for="nombre">Nombre*</label>
+                </div>
+                <input
+                  id="nombre"
+                  type="text"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                />
+              </div>
+              <div class="reservation_form_contenedor">
+                <div>
+                  <label for="numero_comensales">numero de comensales*</label>
+                </div>
+                <input
+                  id="numero_comensales"
+                  type="number"
+                  name="numero_comensales"
+                  placeholder="1-8"
+                />
+              </div>
+              <div class="reservation_form_contenedor">
+                <div>
+                  <label for="fecha_hora">fecha y hora*</label>
+                </div>
+                <input id="fecha_hora" type="date" name="fecha_hora" />
+              </div>
+              <div class="reservation_form_contenedor">
+                <div>
+                  <label for="correo">Tu correo electronico*</label>
+                </div>
+                <input
+                  id="correo"
+                  type="email"
+                  name="correo"
+                  placeholder="email@email.com"
+                />
+              </div>
+              <input type="submit" value="Reservar una mesa" />
+            </form>
+          </div>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
