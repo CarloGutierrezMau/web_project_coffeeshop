@@ -114,7 +114,7 @@
         <section class="reservation">
           <div class="reservation_content">
             <h2 class="reservation_title">Reserva una mesa</h2>
-            <form action="https://httpbin.org/post">
+            <form class="reservation_form" action="https://httpbin.org/post">
               <div class="reservation_form_contenedor">
                 <div>
                   <label for="nombre">Nombre*</label>
@@ -168,9 +168,18 @@
                   type="submit"
                   value="Reservar una mesa"
                   class="reservation_form_submit"
+                  id="reservation_submit"
                 />
               </div>
-              <input type="checkbox" name="newsletter" value="1" />
+              <label class="reservation_terminos" for="newsletter">
+                <input
+                  type="checkbox"
+                  id="newsletter"
+                  name="newsletter"
+                  value="1"
+                />
+                Acepto los terminos de uso
+              </label>
             </form>
           </div>
         </section>

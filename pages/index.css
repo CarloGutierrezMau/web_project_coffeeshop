@@ -134,6 +134,7 @@
   width: 100vw;
   background-color: #d9e7ff;
   background-image: url(../images/background_reservation.svg);
+  margin-top: -50px;
 }
 
 .reservation_content {
@@ -143,7 +144,7 @@
 
 .reservation_title {
   margin-left: -10px;
-  padding-top: 30%;
+  padding-top: 40%;
   font-size: 43px;
   text-align: center;
   width: 110%;
@@ -160,11 +161,25 @@
   font-size: 18px;
   padding-left: 14px;
   margin-top: 5px;
-  background-color: #fff;
+}
+
+.reservation_form_submit_contenedor {
+  display: flex;
+  justify-content: center;
+  padding: 30px 9px;
+  width: 100%;
 }
 
 .reservation_form_submit {
-  margin-top: 30px;
   width: 100%;
-  background-color: #fff;
+  height: 50px;
+  border: none;
+  background-color: #1c83dd;
+  color: #fff;
+}
+
+.reservation_terminos {
+  text-align: center;
+  width: 100%;
+  padding: 0 60px;
 }
