@@ -34,10 +34,12 @@
               <a class="link_element recetas" href="#recipes">Recetas</a>
             </li>
             <li class="link_list">
-              <a class="link_element reservar" href="#">Reserva una mesa</a>
+              <a class="link_element reservar" href="#reservation"
+                >Reserva una mesa</a
+              >
             </li>
             <li class="link_list">
-              <a class="link_element contactos" href="#">Contactos</a>
+              <a class="link_element contactos" href="#footer">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -111,7 +113,7 @@
             </div>
           </div>
         </section>
-        <section class="reservation">
+        <section class="reservation" id="reservation">
           <div class="reservation_content">
             <h2 class="reservation_title">Reserva una mesa</h2>
             <form class="reservation_form" action="https://httpbin.org/post">
@@ -184,7 +186,43 @@
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer">
+        <div class="footer_container_links">
+          <a class="logo_footer_link" href="#">
+            <img
+              class="logo_footer"
+              src="./images/logo_coffeeshop_light.svg"
+              alt="Logo Triple Spress coffee blanco"
+            />
+          </a>
+          <ul class="social_media">
+            <li class="social_list social_list_title">Redes socilaes</li>
+            <li class="social_list">
+              <a class="social_link" href="#"
+                ><img
+                  class="social_image"
+                  src="./images/facebook_white.svg"
+                  alt="logo de facebook para ir a la pagina de facebook oficial"
+                />Facebook</a
+              >
+            </li>
+            <li class="social_list">
+              <a
+                class="social_link"
+                href="https://www.instagram.com/mao_gtz_mtz?igsh=b2dsdWFuamRpMWkz"
+                ><img
+                  class="social_image"
+                  src="./images/instagram_white.svg"
+                  alt="logo de instagram para ir a la pagina de facebook oficial"
+                />instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer_copyright">
+          &copy; 2024 Carlo Emiliano Gutiérrez Martínez
+        </div>
+      </footer>
     </div>
   </body>
 </html>
