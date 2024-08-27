@@ -26,57 +26,44 @@
   </head>
   <body>
     <div class="page">
-      <!--
       <header class="header">
-        <nav class="nav_header">
+        <nav class="nav">
           <a href="#"
             ><img
-              class="logo_header"
+              class="nav__logo"
               src="./images/logo_coffeeshop_dark.svg"
               alt="Logo Triple Spress coffee"
           /></a>
-          <ul class="link_contenedor">
-            <li class="link_list">
-              <a class="link_element recetas" href="#recipes">Recetas</a>
-            </li>
-            <li class="link_list">
-              <a class="link_element reservar" href="#reservation"
-                >Reserva una mesa</a
-              >
-            </li>
-            <li class="link_list">
-              <a class="link_element contactos" href="#footer">Contactos</a>
-            </li>
-          </ul>
+          <div class="nav_links">
+            <a class="nav__link" href="#recipes">Recetas</a>
+            <a class="nav__link" href="#reservation">Reservar una mesa</a>
+            <a class="nav__link" href="#footer">Contactos</a>
+          </div>
         </nav>
         <div class="header_content">
-          <div class="header_text">
-            <h1 class="header_title">
-              <span class="header_span">Café de especialidad</span> en Triple
-              Peaks
-            </h1>
-            <h2 class="header_subtitle">
-              ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos
-              café para darte eneriga y motivar tu creatividad
-            </h2>
-          </div>
-          <div class="header_image_contenedor">
-            <img
-              class="header_image"
-              src="./images/inside_coffee_shop.png"
-              alt="Imagen de una Cafetería extravagantemente interesante"
-            />
-          </div>
+          <h1 class="header_title">
+            <span class="header_span-accent">Café de especialidad</span>
+            en Triple Peaks
+          </h1>
+          <p class="header_description">
+            ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+            para darte energía y motivar tu creatividad.
+          </p>
+          <img
+            class="header_image"
+            src="./images/inside_coffee_shop.png"
+            alt="Imagen de una Cafetería extravagantemente interesante"
+          />
         </div>
-        <div class="header_info">
+        <div class="header_footer">
           <div class="header_horarios">
-            <div>Horario:</div>
-            <div>Lunes a Viernes (de 10:00h a 19:00h)</div>
-            <div>Sábados y Domingos (de 11:00h a 18:00h)</div>
+            <p>Horario:</p>
+            <p>Lunes a Viernes (de 10:00h a 19:00h)</p>
+            <p>Sábados y Domingos (de 11:00h a 18:00h)</p>
           </div>
-          <div class="header_direccion">
-            Avenida del exito 200, Ciudad Triple Peaks
-          </div>
+          <p class="header_direccion">
+            Avenida del Éxito 200, Ciudad Triple Peaks
+          </p>
         </div>
       </header>
       <main class="content">
@@ -84,158 +71,44 @@
           <div class="recipes_presentacion">
             <h2 class="recipes_title">Recetas</h2>
             <h3 class="recipes_subtitle">
-              Echa un vistaso a las recetas que hemos reunido para que elabores
-              tus propios snacks
+              Echa un vistazo a las recetas que hemos reunido para que elabores
+              tus propios snacks.
             </h3>
             <div class="recipes_video-contenedor">
               <div class="recipes_iframe_contenedor">
                 <iframe
                   class="recipes_video"
-                  src="https://www.youtube.com/embed/zMlweOWuIWg?si=Gzcp2ncxyyHWp0p9&amp;controls=0"
+                  src="https://www.youtube.com/embed/j6VlT_jUVPc?si=7Cb6k3UN0_a2phOZ&amp;controls=0"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
                 ></iframe>
                 <div class="recipes_iframe_texto">
-                  <p>AEROPRESS: nivel avanzado</p>
+                  <p>Receta en Aeropress</p>
                   <p>~5 min</p>
                 </div>
               </div>
               <div class="recipes_iframe_contenedor">
                 <iframe
                   class="recipes_video"
-                  src="https://www.youtube.com/embed/FakuUk2vGds?si=DQHyR0SyJ1WQVILX&amp;controls=0"
+                  src="https://www.youtube.com/embed/st571DYYTR8?si=gpA-I9wr8KGJDgNB&amp;controls=0"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
                 ></iframe>
                 <div class="recipes_iframe_texto">
-                  <p>¿Qué es mejor?</p>
-                  <p>~24 min</p>
+                  <p>Receta en cafetera francesa</p>
+                  <p>~15 min</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation">
-          <div class="reservation_content">
-            <h2 class="reservation_title">Reserva una mesa</h2>
-            <form class="reservation_form" action="https://httpbin.org/post">
-              <div class="reservation_form_contenedor">
-                <div>
-                  <label for="nombre">Nombre*</label>
-                </div>
-                <input
-                  class="reservation_form_input"
-                  id="nombre"
-                  type="text"
-                  name="nombre"
-                  placeholder="Tu nombre"
-                />
-              </div>
-              <div class="reservation_form_contenedor">
-                <div>
-                  <label for="numero_comensales">numero de comensales*</label>
-                </div>
-                <input
-                  class="reservation_form_input"
-                  id="numero_comensales"
-                  type="number"
-                  name="numero_comensales"
-                  placeholder="1-8"
-                />
-              </div>
-              <div class="reservation_form_contenedor">
-                <div>
-                  <label for="fecha_hora">fecha y hora*</label>
-                </div>
-
-                <input
-                  class="reservation_form_input"
-                  id="fecha_hora"
-                  type="date"
-                  name="fecha_hora"
-                />
-              </div>
-              <div class="reservation_form_contenedor">
-                <div>
-                  <label for="correo">Tu correo electronico*</label>
-                </div>
-                <input
-                  class="reservation_form_input"
-                  id="correo"
-                  type="email"
-                  name="correo"
-                  placeholder="email@email.com"
-                />
-              </div>
-              <div class="reservation_form_submit_contenedor">
-                <input
-                  type="submit"
-                  value="Reservar una mesa"
-                  class="reservation_form_submit"
-                  id="reservation_submit"
-                />
-              </div>
-              <label class="reservation_terminos" for="newsletter">
-                <input
-                  type="checkbox"
-                  id="newsletter"
-                  name="newsletter"
-                  value="1"
-                />
-                Acepto los terminos de uso
-              </label>
-            </form>
-          </div>
-        </section>
+        <section class="reservation" id="reservation"></section>
       </main>
-      <footer class="footer" id="footer">
-        <div class="footer_container_links">
-          <a class="logo_footer_link" href="#">
-            <img
-              class="logo_footer"
-              src="./images/logo_coffeeshop_light.svg"
-              alt="Logo Triple Spress coffee blanco"
-            />
-          </a>
-          <ul class="social_media">
-            <li class="social_list social_list_title">Redes socilaes</li>
-            <li class="social_list">
-              <a class="social_link" href="#"
-                ><img
-                  class="social_image"
-                  src="./images/facebook_white.svg"
-                  alt="logo de facebook para ir a la pagina de facebook oficial"
-                />Facebook</a
-              >
-            </li>
-            <li class="social_list">
-              <a
-                class="social_link"
-                href="https://www.instagram.com/mao_gtz_mtz?igsh=b2dsdWFuamRpMWkz"
-                ><img
-                  class="social_image"
-                  src="./images/instagram_white.svg"
-                  alt="logo de instagram para ir a la pagina de facebook oficial"
-                />instagram</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer_copyright">
-          &copy; 2024 Carlo Emiliano Gutiérrez Martínez
-        </div>
-      </footer>
-      -->
-      <header class="header"></header>
-      <main class="content">
-        <section class="recipes"></section>
-        <section class="reservation"></section>
-      </main>
-      <footer class="footer"></footer>
+      <footer class="footer" id="footer"></footer>
     </div>
   </body>
 </html>
