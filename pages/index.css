@@ -1,3 +1,7 @@
+p {
+  margin: 0;
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -69,14 +73,18 @@
   font-weight: normal;
   font-size: 58px;
   line-height: 72px;
+  display: block;
 }
 
-.header_description {
+.header__description {
   max-width: 638px;
   margin-top: 28px;
   width: 760px;
-  line-height: 32px;
+  font-family: "Noto Serif";
+  font-style: normal;
   font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
   margin-left: 80px;
 }
 
@@ -92,11 +100,16 @@
 .header_footer {
   display: flex;
   justify-content: space-between;
-  color: #6f6f6f;
   position: absolute;
   bottom: 40px;
   left: 80px;
   right: 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
 }
 
 .header_direccion {
@@ -106,43 +119,56 @@
 }
 
 .recipes {
-  background-color: #043157;
-  height: 100vh;
+  background-color: #0a2750;
   width: 100vw;
   background-image: url(../images/background_recipes.svg);
   color: #fff;
-  padding-top: 70px;
+  padding-top: 100px;
+  padding-bottom: 215px;
   box-sizing: border-box;
 }
 
-.recipes_presentacion {
-  margin-left: 50px;
-}
-
 .recipes_title {
-  font-size: 43px;
+  margin-left: 80px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
 }
 
 .recipes_subtitle {
-  width: 420px;
+  max-width: 438px;
+  font-family: "Noto Serif";
+  font-style: normal;
   font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 80px;
 }
 
-.recipes_video-contenedor {
+.recipes_videos {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   width: 80vw;
   margin: 0 auto;
   justify-content: center;
+  margin-top: 80px;
 }
 
-.recipes_video {
-  width: 500px;
-  height: 300px;
+.recipes_iframe {
+  width: 480px;
+  height: 273px;
   border: 1px #838383 solid;
 }
 
-.recipes_iframe_texto {
+.recipes_iframe-caption {
+  margin-top: 24px;
   display: flex;
   justify-content: space-between;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
 }
