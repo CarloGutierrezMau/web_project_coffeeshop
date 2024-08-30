@@ -6,6 +6,9 @@ p {
   min-width: 1100px;
   max-width: 1600px;
   margin: 0 auto;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .header {
@@ -42,8 +45,8 @@ p {
   text-decoration: none;
   color: #000;
   font-weight: 500;
-  font-family: "Inter";
   font-style: normal;
+  font-family: "Inter";
   font-size: 16px;
   line-height: 20px;
 }
