@@ -102,7 +102,76 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservation"></section>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reserva una mesa</h2>
+          <form
+            class="form reservation__form"
+            action="https://httpbin.org/post"
+          >
+            <fieldset class="form__fieldset">
+              <label for="nombre" class="form__label">Nombre*</label>
+              <input
+                class="form__input"
+                id="nombre"
+                type="text"
+                name="nombre"
+                placeholder="Tu nombre"
+                required
+              />
+              <label for="numero_comensales" class="form__label"
+                >numero de comensales*</label
+              >
+              <input
+                class="form__input"
+                id="numero_comensales"
+                type="number"
+                name="numero_comensales"
+                placeholder="1-8"
+                required
+              />
+              <label for="fecha_hora" class="form__label">fecha y hora*</label>
+
+              <input
+                class="form__input"
+                id="fecha_hora"
+                type="datetime-local"
+                name="fecha_hora"
+                required
+              />
+              <label for="correo" class="form__label"
+                >Tu correo electronico*</label
+              >
+              <input
+                class="form__input"
+                id="correo"
+                type="email"
+                name="correo"
+                placeholder="email@email.com"
+                required
+              />
+            </fieldset>
+            <div class="reservation_form_submit_contenedor">
+              <button
+                type="submit"
+                value="Reservar una mesa"
+                class="form__button"
+                id="reservation_submit"
+              >
+                Reservar una mesa
+              </button>
+            </div>
+            <label class="form__label form__checkbox-label" for="newsletter">
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                value="1"
+                class="form__checkbox"
+              />
+              Acepto los terminos de uso
+            </label>
+          </form>
+        </section>
       </main>
       <footer class="footer" id="footer"></footer>
     </div>
